@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>隐匣隐私政策</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f6f4ef;
+      --card: #ffffff;
+      --text: #1f2933;
+      --muted: #5f6b7a;
+      --accent: #5b6ee1;
+      --accent-soft: #e8ebff;
+      --border: #dedbd2;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111318;
+        --card: #1b1f27;
+        --text: #f2f4f8;
+        --muted: #b7c0cc;
+        --accent: #9aa7ff;
+        --accent-soft: #252b4a;
+        --border: #343a46;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.75;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 0.2em;
+    }
+
+    .page {
+      width: min(900px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 56px;
+    }
+
+    .card {
+      padding: 40px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: 0 20px 48px rgba(31, 41, 51, 0.08);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.92rem;
+      font-weight: 700;
+    }
+
+    h1,
+    h2 {
+      line-height: 1.25;
+      margin: 0;
+    }
+
+    h1 {
+      margin-top: 18px;
+      font-size: clamp(2rem, 6vw, 3.8rem);
+      letter-spacing: -0.04em;
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 1.35rem;
+    }
+
+    p {
+      margin: 10px 0 0;
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 1.25rem;
+    }
+
+    li + li {
+      margin-top: 6px;
+    }
+
+    .lead,
+    .meta,
+    .footer {
+      color: var(--muted);
+    }
+
+    .lead {
+      max-width: 720px;
+      font-size: 1.12rem;
+    }
+
+    .meta {
+      margin-top: 18px;
+      font-size: 0.95rem;
+    }
+
+    .footer {
+      margin-top: 32px;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 720px) {
+      .page {
+        width: min(100% - 24px, 900px);
+        padding: 24px 0 36px;
+      }
+
+      .card {
+        border-radius: 20px;
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <article class="card">
+      <span class="eyebrow">隐私政策</span>
+      <h1>隐匣隐私政策</h1>
+      <p class="lead">《隐匣》重视本地优先与隐私保护。此页面说明当前版本的数据处理边界。</p>
+      <p class="meta">最后更新：2026-06-27</p>
+
+      <h2>1. 我们不要求账号</h2>
+      <p>隐匣不提供账号系统，也不要求用户注册、登录或绑定身份信息。</p>
+
+      <h2>2. 我们不主动收集个人数据</h2>
+      <p>隐匣的核心功能在设备本地运行。普通文件库与私密库中的文件默认保存在用户设备本地，不上传到我们的服务器。</p>
+
+      <h2>3. 我们不提供云同步</h2>
+      <p>当前版本不包含云同步功能。用户导入的文件、创建的文件夹、私密库内容均保留在本地设备中。</p>
+
+      <h2>4. 我们不投放广告</h2>
+      <p>隐匣不包含广告系统，也不为了广告目的跟踪用户。</p>
+
+      <h2>5. 私密库与本地加密</h2>
+      <p>私密库用于存放用户选择导入的敏感文件。私密库内容使用本地加密保护。系统验证能力可能使用 Face ID、Touch ID 或设备口令，但这些验证过程由 iOS 系统处理，隐匣不会获取用户的生物识别数据。</p>
+
+      <h2>6. 文件访问</h2>
+      <p>隐匣只处理用户主动导入或在 App 内创建、管理的文件。用户可以在 App 内删除相关文件。</p>
+
+      <h2>7. 网络与第三方服务</h2>
+      <p>当前版本的核心功能不依赖网络服务。若未来加入崩溃分析、同步、账号、客服、遥测或其他第三方服务，本隐私政策将更新，并在必要时重新披露数据处理方式。</p>
+
+      <h2>8. 可访问性说明</h2>
+      <p>当前 VoiceOver / 旁白基础验收保留为真机或稳定模拟器补测项。本政策页面不将该项标记为已完成。</p>
+
+      <h2>9. 联系我们</h2>
+      <p>如对隐私政策有疑问，请通过以下邮箱联系我们：</p>
+      <p><strong>[待填写支持邮箱]</strong></p>
+
+      <p class="footer"><a href="index.html">返回隐匣支持页面</a></p>
+    </article>
+  </main>
+</body>
+</html>

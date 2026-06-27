@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>隐匣支持</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f6f4ef;
+      --card: #ffffff;
+      --text: #1f2933;
+      --muted: #5f6b7a;
+      --accent: #5b6ee1;
+      --accent-soft: #e8ebff;
+      --border: #dedbd2;
+      --warning-bg: #fff7df;
+      --warning-border: #e6c76d;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111318;
+        --card: #1b1f27;
+        --text: #f2f4f8;
+        --muted: #b7c0cc;
+        --accent: #9aa7ff;
+        --accent-soft: #252b4a;
+        --border: #343a46;
+        --warning-bg: #332a16;
+        --warning-border: #8f7428;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.7;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 0.2em;
+    }
+
+    .page {
+      width: min(960px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 56px;
+    }
+
+    .hero,
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: 0 20px 48px rgba(31, 41, 51, 0.08);
+    }
+
+    .hero {
+      padding: 40px;
+    }
+
+    .card {
+      padding: 28px;
+      margin-top: 18px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.92rem;
+      font-weight: 700;
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.25;
+      margin: 0;
+    }
+
+    h1 {
+      margin-top: 18px;
+      font-size: clamp(2.2rem, 7vw, 4.5rem);
+      letter-spacing: -0.05em;
+    }
+
+    h2 {
+      font-size: clamp(1.45rem, 3vw, 2rem);
+      margin-bottom: 14px;
+    }
+
+    h3 {
+      font-size: 1.08rem;
+      margin-top: 22px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin: 10px 0 0;
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 1.25rem;
+    }
+
+    li + li {
+      margin-top: 6px;
+    }
+
+    .lead {
+      max-width: 720px;
+      color: var(--muted);
+      font-size: 1.18rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .mini-card {
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: color-mix(in srgb, var(--card) 92%, var(--accent-soft));
+    }
+
+    .notice {
+      margin-top: 18px;
+      padding: 18px;
+      border: 1px solid var(--warning-border);
+      border-radius: 18px;
+      background: var(--warning-bg);
+    }
+
+    .footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 720px) {
+      .page {
+        width: min(100% - 24px, 960px);
+        padding: 24px 0 36px;
+      }
+
+      .hero,
+      .card {
+        border-radius: 20px;
+        padding: 24px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero" aria-labelledby="title">
+      <span class="eyebrow">隐匣支持</span>
+      <h1 id="title">本地优先的离线文件工具箱与私密库</h1>
+      <p class="lead">隐匣帮助你在 iPhone 上整理本地文件、预览常用文档、处理 ZIP 压缩包，并将敏感文件放入独立的私密库中。产品方向坚持本地、离线、无账号、无广告。</p>
+    </section>
+
+    <section class="card" aria-labelledby="overview">
+      <h2 id="overview">App 简介</h2>
+      <div class="grid">
+        <div class="mini-card">
+          <h3>普通文件库</h3>
+          <p>支持导入文件、创建文件夹、多级目录浏览、重命名、删除确认，以及常见文件预览。</p>
+        </div>
+        <div class="mini-card">
+          <h3>ZIP 工具</h3>
+          <p>支持在本地创建压缩包与解压文件，适合离线整理和转移常用资料。</p>
+        </div>
+        <div class="mini-card">
+          <h3>私密库</h3>
+          <p>为敏感文件提供独立入口，使用私密口令与 iOS 系统验证能力保护访问。</p>
+        </div>
+        <div class="mini-card">
+          <h3>隐私边界</h3>
+          <p>当前版本不提供账号、云同步或广告系统。核心文件处理在设备本地完成。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="contact">
+      <h2 id="contact">联系方式</h2>
+      <p>如果你在使用隐匣时遇到问题，或希望反馈建议，请通过以下邮箱联系：</p>
+      <p><strong>[待填写支持邮箱]</strong></p>
+      <p>反馈时建议附上：设备型号、iOS 版本、隐匣版本、问题发生步骤，以及是否涉及普通文件库、ZIP 工具或私密库。</p>
+    </section>
+
+    <section class="card" aria-labelledby="faq">
+      <h2 id="faq">常见问题</h2>
+
+      <h3>隐匣需要注册账号吗？</h3>
+      <p>不需要。隐匣当前不提供账号系统，也不要求登录。</p>
+
+      <h3>隐匣会上传我的文件吗？</h3>
+      <p>当前版本的核心功能在设备本地运行，不提供云同步。用户导入和管理的文件默认保存在本地设备中。</p>
+
+      <h3>私密库使用 Face ID 时，App 会获取我的生物识别数据吗？</h3>
+      <p>不会。Face ID、Touch ID 或设备口令验证由 iOS 系统处理，隐匣不会获取用户的生物识别数据。</p>
+
+      <h3>忘记私密库口令怎么办？</h3>
+      <p>请谨慎保存私密库口令。出于本地隐私保护设计，隐匣不提供云端找回或远程重置私密库内容的能力。</p>
+
+      <h3>当前是否已经完成 VoiceOver 验收？</h3>
+      <p>尚未完成。当前 VoiceOver / 旁白基础验收保留为真机或稳定模拟器补测项，不在此页面声明已通过。</p>
+    </section>
+
+    <section class="card" aria-labelledby="status">
+      <h2 id="status">当前版本状态</h2>
+      <p>阶段 6 可提交修复已收口，最新基线为 <strong>ac88617</strong>。MVP 仍处于验收收尾阶段，不标记为完成。</p>
+      <div class="notice" role="note">
+        <p><strong>仍需补测：</strong>VoiceOver / 旁白基础验收、真机 Face ID / 设备口令链路、后台锁定与隐私遮罩、最大字号主流程可达性。</p>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="privacy">
+      <h2 id="privacy">隐私政策</h2>
+      <p>请阅读 <a href="privacy.html">隐匣隐私政策</a>，了解当前版本的数据处理边界。</p>
+    </section>
+
+    <footer class="footer">
+      <p>© 隐匣。最后更新：2026-06-27。</p>
+    </footer>
+  </main>
+</body>
+</html>
